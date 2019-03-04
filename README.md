@@ -12,5 +12,6 @@
 
 - Add mistake 
 - keep point on char 
+- mechanism of selection through competition
 
 **Just For Fun, PR Welcome**
