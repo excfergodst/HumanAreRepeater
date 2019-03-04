@@ -8,7 +8,7 @@ import (
 )
 
 var config gjson.Result
-var score [100]int64
+var score [99999]int64
 
 func main() {
 
@@ -32,7 +32,7 @@ func main() {
 					score[i] += a
 					score[j] += b
 
-					fmt.Println(iv.Name(), a, jv.Name(), b)
+					//fmt.Println(iv.Name(), a, jv.Name(), b)
 
 				}
 
