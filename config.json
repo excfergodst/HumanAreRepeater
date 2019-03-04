@@ -1,7 +1,8 @@
 {
     "round_times":1,
     "game_times" :10,
-    "init_pt" : 0,
+    "game_init_pt" : 0,
+    "char_init_pt" : 0,
     "both_win_pt" : 2,
     "both_lose_pt" : 0,
     "win_pt":3,

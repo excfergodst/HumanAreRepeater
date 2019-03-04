@@ -4,10 +4,9 @@ import (
 	"fmt"
 
 	"./char"
-	"github.com/tidwall/gjson"
 )
 
-var config gjson.Result
+var config configStruct
 var score [99999]int64
 
 func main() {
@@ -15,10 +14,7 @@ func main() {
 	config = configInit()
 	list := char.ListInit()
 
-	var index int64
-	index = 0
-
-	for ; index < config.Get("round_times").Int(); index++ {
+	for index := 0; index < config.RoundTimes; index++ {
 
 		for i, iv := range list {
 
@@ -28,7 +24,7 @@ func main() {
 
 					g := Game{}
 					g.Init()
-					a, b := g.Run(iv, jv)
+					a, b := g.Run(&iv, &jv)
 					score[i] += a
 					score[j] += b
 

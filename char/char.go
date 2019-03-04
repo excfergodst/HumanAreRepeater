@@ -16,15 +16,15 @@ type Char interface {
 
 func ListInit() (list []Char) {
 
-	list = append(list, Random{})
-	list = append(list, Repeat{})
-	list = append(list, EightyYesTwentyNo{})
-	list = append(list, AlwaysNo{})
-	list = append(list, AlwaysYes{})
-	list = append(list, NoFirstIfTrustYesAlways{})
-	list = append(list, TrustOnce{})
-	list = append(list, TrustTwice{})
-	list = append(list, IfLessThenNo{})
+	list = append(list, &Random{})
+	list = append(list, &Repeat{})
+	list = append(list, &EightyYesTwentyNo{})
+	list = append(list, &AlwaysNo{})
+	list = append(list, &AlwaysYes{})
+	list = append(list, &NoFirstIfTrustYesAlways{})
+	list = append(list, &TrustOnce{})
+	list = append(list, &TrustTwice{})
+	list = append(list, &IfLessThenNo{})
 
 	return list
 }
