@@ -20,7 +20,7 @@ func main() {
 
 			for j, jv := range list {
 
-				if i != j {
+				if i < j {
 
 					g := Game{}
 					g.Init()
