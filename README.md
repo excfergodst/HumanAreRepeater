@@ -4,8 +4,8 @@
 
 ## Character 
 
-- Define in ==char== folder
-- Add your character in ==char.go:17==  CharList() function
+- Define in char folder
+- Add your character in char.go CharList() function
 
 
 ## TODO
